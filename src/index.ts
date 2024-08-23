@@ -23,8 +23,8 @@ const encryptFnc = (value: string) => {
 };
 
 const decryptFnc = (value: string) => {
-  const key = CryptoJS.enc.Utf8.parse("b75524255a7f54d2726a951bb39204df");
-  const iv = CryptoJS.enc.Utf8.parse("1583288699248111");
+  const key = CryptoJS.enc.Utf8.parse(Bun.env.KEY);
+  const iv = CryptoJS.enc.Utf8.parse(Bun.env.IV);
   const decrypted = CryptoJS.AES.decrypt(value, key, {
     keySize: 128 / 8,
     iv,
