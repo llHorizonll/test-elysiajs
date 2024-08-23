@@ -5,9 +5,15 @@
     "start": "NODE_ENV=production bun src/index.ts"
   },
   "dependencies": {
+    "@types/crypto-js": "^4.2.2",
+    "@yume-chan/adb": "^0.0.24",
+    "@yume-chan/adb-server-node-tcp": "^0.0.24",
+    "@yume-chan/stream-extra": "^0.0.24",
+    "crypto-js": "^4.2.0",
     "elysia": "latest"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "bun-types": "latest"
   }
 }
